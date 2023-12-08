@@ -1,5 +1,8 @@
 FROM node:latest
 
+RUN useradd -r -u 2000 app
+
+
 WORKDIR /usr/src/opt
 
 COPY . .
